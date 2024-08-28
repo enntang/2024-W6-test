@@ -1,0 +1,37 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<nav class="header navbar navbar-expand-md navbar-light bg-tea-100 p-0">
+  <div class="container-sm">
+    <!-- logo -->
+    <h1 class=" me-md-3 me-lg-6 navbar-brand p-0">
+      <a class="" href="#"><img src="../assets/images/logo.svg" alt="Vivre"></a>
+    </h1>
+    <!-- burger btn -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <!-- collapsed menu -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <!-- search bar -->
+      <form class="search-bar d-flex me-auto position-relative">
+        <input class="form-control" type="search" placeholder="搜尋文章" aria-label="Search">
+        <button class="translate-middle-y " type="submit"><i class="bi bi-search"></i></button>
+      </form>
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="#">所有文章</a>
+        <a class="nav-link" href="#">訂閱方案</a>
+        <a class="nav-link" href="#">關於我們</a>
+        <button class="btn login btn-accent-200 text-white">登入/註冊</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  $(document).ready(function () {
+    $('.navbar-toggler').click(function (event) {
+      $(".container-sm").toggleClass("expand");
+      $("h1").toggleClass("d-none");
+    });
+  });
+</script>

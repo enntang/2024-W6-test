@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- -----header start----- -->
+    <%- include('./layout/header'); -%>
+        <!-- -----header end----- -->
+        <div class="container my-7">
+            <div class="row py-10">
+                <div class="col-6">
+                    <h4 class="mb-5">Button</h4>
+                    <p class="my-2">Green</p>
+                    <button class="btn btn-filled green" type="button">馬上訂閱<i class="bi bi-arrow-right"></i></button>
+                    <button class="btn btn-filled green" type="button" disabled>馬上訂閱<i
+                            class="bi bi-arrow-right"></i></button>
+                    <p class="my-2">Gray</p>
+                    <button class="btn btn-filled gray" type="button">套用<i class="bi bi-arrow-right"></i></button>
+                    <button class="btn btn-filled gray" type="button" disabled>套用<i
+                            class="bi bi-arrow-right"></i></button>
+                    <p class="my-2">Text</p>
+                    <a href="" class="btn btn-text p-0">Read More</a>
+                    <h4 class="my-5">Form</h4>
+                    <form class="custom-form">
+                        <div class="mb-3">
+                            <label for="user-name" class="form-label">姓名</label>
+                            <input type="email" class="form-control" id="user-name" aria-describedby="emailHelp"
+                                placeholder="請輸入姓名">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label error">Email address</label>
+                            <input type="email" class="form-control error" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="email">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label disabled">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="請輸入密碼"
+                                disabled>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">記住卡片資訊</label>
+                        </div>
+
+                    </form>
+                    <div class="custom-form">
+                        <p class="my-3">radio</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Default radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                Default checked radio
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6">
+                    <h4 class="mb-5">Card</h4>
+                    <p class="my-2">熱門主題</p>
+                    <div class="feature-box-item">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="../assets/images/theme-1.png" />
+                            <img src="../assets/images/theme-1-sm.png" alt="banner" class="w-100" alt="theme" />
+                        </picture>
+                        <a href="" class="top-50 start-50 translate-middle">
+                            <p class="fs-6 fs-md-5 text-center text-white fw-bold">城市漫遊者</p>
+                        </a>
+                    </div>
+                    <p class="my-2">精選文章</p>
+                    <div class="card rounded-0 border-0 border-bottom border-gray-500">
+                        <picture>
+                            <source media="(min-width:768px)" srcset="../assets/images/articles-1.png" />
+                            <img src="../assets/images/articles-1-sm.png" alt="theme" class="w-100" />
+                        </picture>
+                        <div class="card-body px-0 py-5">
+                            <h3 class="h5 card-title mb-1 text-gray-500">私人島嶼的露營奇遇記</h3>
+                            <p class="fs-6 card-text mb-5 text-gray-400">
+                                遠離塵囂,用全新的眼光重塑生活的舒適本味。徜徉在環山綠野間,在這處隱世私家別墅裡,盡情領略池畔優閒時光,任林間微風撫面,聆聽花鳥嘶啞之音,重拾內心深處的寧靜安詳...</p>
+                            <div class="d-flex justify-content-between">
+                                <a href="" class="btn btn-text p-0 fs-5 fs-md-6 fs-lg-5">Read More</a>
+                                <div class="badge bg-tea-300 text-tea-400 rounded-2 d-flex align-items-center">
+                                    <p class="text-tea-400 fs-6">會員專屬</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="feature-box">
+                        <div class=" swiper-nav">
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-controller">
+                                <div class="swiper-button-prev"><i class="bi bi-arrow-left"></i></div>
+                                <div class="swiper-button-next"><i class="bi bi-arrow-right"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </div>
+        <script type="module" src="../main.js"></script>
+</body>
+
+</html>
