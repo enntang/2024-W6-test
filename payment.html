@@ -6,12 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>payment</title>
+  <script type="module" crossorigin src="/2024-W6/assets/main-48d787c1.js"></script>
+  <link rel="stylesheet" href="/2024-W6/assets/main-101b3bc8.css">
 </head>
 
 <body>
   <!-- -----header start----- -->
-  <%- include('./layout/header'); -%>
-    <!-- -----header end----- -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<nav class="header navbar navbar-expand-md navbar-light bg-tea-100 p-0">
+  <div class="container-sm">
+    <!-- logo -->
+    <h1 class=" me-md-3 me-lg-6 navbar-brand p-0">
+      <a class="" href="#"><img src="/2024-W6/assets/logo-24020e29.svg" alt="Vivre"></a>
+    </h1>
+    <!-- burger btn -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="bi bi-list"></i>
+      <i class="bi bi-x-lg"></i>
+    </button>
+    <!-- collapsed menu -->
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <!-- search bar -->
+      <form class="search-bar d-flex me-auto position-relative">
+        <input class="form-control" type="search" placeholder="搜尋文章" aria-label="Search">
+        <button class="translate-middle-y " type="submit"><i class="bi bi-search"></i></button>
+      </form>
+      <div class="navbar-nav">
+        <a class="nav-link" aria-current="page" href="#">所有文章</a>
+        <a class="nav-link" href="#">訂閱方案</a>
+        <a class="nav-link" href="#">關於我們</a>
+        <button class="btn login btn-accent-200 text-white">登入/註冊</button>
+      </div>
+    </div>
+  </div>
+</nav>
+<script>
+  $(document).ready(function () {
+    $('.navbar-toggler').click(function (event) {
+      $(".container-sm").toggleClass("expand");
+      $("h1").toggleClass("d-none");
+    });
+  });
+</script>    <!-- -----header end----- -->
     <!-- -----payment section start----- -->
     <section class="basic-section">
       <div class="container">
@@ -134,13 +171,20 @@
     </section>
     <!-- -----payment section end----- -->
     <!-- -----footer start----- -->
-    <%- include('./layout/footer'); -%>
-      <!-- -----footer end----- -->
+    <footer class="footer">
+    <div class="container">
+        <div class="border-top border-gray-300">
+            <p class="py-4 text-tea-400 text-center">©Vivre 2024 All right Reserved</p>
+
+        </div>
+    </div>
+   
+</footer>      <!-- -----footer end----- -->
 
 
 
 
-      <script type="module" src="../main.js"></script>
+      
 </body>
 
 </html>
