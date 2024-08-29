@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>index</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -15,7 +17,7 @@
     <!-- -----header end----- -->
     <!-- ----- key vision section start----- -->
     <main>
-      
+
       <section class="feature-box">
         <div class="p-0 container position-relative">
           <picture>
@@ -36,8 +38,8 @@
       <!-- ----- feature section start----- -->
       <section class="feature-box">
         <div class="container">
-          <h2 class="fs-4 fs-md-2 mb-5">熱門主題</h2>
-          <div class="row g-2 g-md-4">
+          <h2 class="fs-4 fs-md-2 mb-5"  data-aos="fade-up">熱門主題</h2>
+          <div class="row g-2 g-md-4"  data-aos="fade-up" data-aos-delay="300">
             <div class="col-md-6 col-lg-3">
               <div class="feature-box-item">
                 <picture>
@@ -137,9 +139,9 @@
           <div class="row">
             <div class="col-md-4">
               <div class="d-flex flex-column h-100">
-                <h2 class="fs-4 fs-md-2 mb-auto">精選文章</h2>
+                <h2 class="fs-4 fs-md-2 mb-auto"  data-aos="fade-up" >精選文章</h2>
                 <!-- swiper controller -->
-                 <!-- for desktop only -->
+                <!-- for desktop only -->
                 <div class="article swiper-nav d-none d-md-block">
                   <div class="swiper-pagination"></div>
                   <div class="swiper-controller">
@@ -151,7 +153,7 @@
             </div>
             <div class="col-md-8">
               <!-- article sliders -->
-              <div class="swiper articleSwiper">
+              <div class="swiper articleSwiper"   data-aos="fade-up" data-aos-delay="300">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="card rounded-0 border-0 border-bottom border-gray-500">
@@ -177,7 +179,8 @@
                       </picture>
                       <div class="card-body px-0 py-5">
                         <h3 class="h5 card-title mb-1 text-gray-500">窺探米其林三星主廚的絕密手藝</h3>
-                        <p class="fs-6 card-text mb-5 text-gray-400">在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
+                        <p class="fs-6 card-text mb-5 text-gray-400">
+                          在這間隱世餐廳,來一場味蕾與靈魂的盛宴。幽微燈火下,透過巨匠大師的獨門料理,領略食材中蘊藏的大自然馨香脈絡。營造只屬於你我的私密小宇宙,沉浸其中,品嘗人生至臻至美的風味...</p>
                         <div class="d-flex justify-content-between">
                           <a href="" class="btn btn-text p-0 fs-5 fs-md-6 fs-lg-5">Read More</a>
                           <div class="badge bg-tea-300 text-tea-400 rounded-2 d-flex align-items-center">
@@ -234,15 +237,15 @@
       </section>
       <!-- ----- article section end----- -->
       <!-- ----- campaign section start----- -->
-      <section class="campaign bg-tea-200">
+      <section class="campaign bg-tea-200"  data-aos="zoom-in">
         <picture class="deco-pic right">
           <source media="(min-width: 992px)" srcset="../assets/images/bg-2.png" />
           <img src="../assets/images/bg-2-sm.png" alt="" class="w-100" />
-          </picture>
+        </picture>
         <picture class="deco-pic left d-none d-lg-block">
           <source media="(min-width: 992px)" srcset="../assets/images/bg-1.png" />
           <img src="../assets/images/bg-1-sm.png" alt="" class="w-100" />
-          </picture>
+        </picture>
         <div class="container">
           <div class="d-flex flex-column align-items-center">
             <h3 class="fs-6 fs-md-4 text-tea-400 mb-2">\ 母親節強檔活動 /</h3>
@@ -269,10 +272,10 @@
       <!-- ----- news section start----- -->
       <section class="feature-box">
         <div class="container">
-          <h2 class="fs-4 fs-md-2 mb-5">大家都在看</h2>
+          <h2 class="fs-4 fs-md-2 mb-5" data-aos="fade-up">大家都在看</h2>
           <div class="d-flex align-items-start">
             <!-- contents for desktop -->
-            <div class="news-block d-none  d-md-block">
+            <div class="news-block d-none  d-md-block" data-aos="fade-up" data-aos-delay="300">
               <div class="row g-md-3 g-lg-5">
                 <div class="col-md-12 col-lg-3">
                   <!-- tab side menu -->
@@ -471,7 +474,7 @@
               </div>
             </div>
             <!-- slider for mobile devices -->
-            <div class="swiper newsSwiper d-md-none">
+            <div class="swiper newsSwiper d-md-none" data-aos="fade-up" data-aos-delay="300">
               <div class="swiper-wrapper">
                 <!-- slide content of alcohol -->
                 <div class="swiper-slide w-75">
@@ -577,7 +580,7 @@
         <div class="container">
 
           <div class="d-flex justify-content-between w-100">
-            <h2 class="fs-4 fs-md-2 mb-5">品味生活</h2>
+            <h2 class="fs-4 fs-md-2 mb-5" data-aos="fade-up" >品味生活</h2>
             <!-- swiper controller -->
             <div class="swiper-nav traveling d-none d-md-flex">
               <div class="swiper-controller">
@@ -588,7 +591,7 @@
           </div>
 
           <!-- traveling sliders -->
-          <div class="swiper travelingSwiper">
+          <div class="swiper travelingSwiper" data-aos="fade-up" data-aos-delay="300">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <h3 class="fs-1 text-tea-400 mb-6">食.</h3>
@@ -645,7 +648,7 @@
       </section>
       <!-- ----- traveling section end----- -->
       <!-- ----- ideas section start----- -->
-      <section class="campaign bg-tea-200">
+      <section class="campaign bg-tea-200" data-aos="zoom-in">
         <div class="container">
           <div class="row d-flex align-items-center">
             <!-- campaign title -->
@@ -845,10 +848,11 @@
         var swiper = new Swiper(".ideaSwiper", {
           slidesPerView: "auto",
           spaceBetween: 24,
-
         });
       </script>
 
+      <!-- AOS animation -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 
 </html>
